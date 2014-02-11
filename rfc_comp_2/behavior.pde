@@ -1,4 +1,4 @@
-int testing_mode = 1; //0 for scoring, 1 for slow scoring, 2 for manual ball control
+int testing_mode = 0; //0 for scoring, 1 for slow scoring, 2 for manual ball control
 
 class Behavior {
   
@@ -35,8 +35,11 @@ class Behavior {
   Hint: You might want to keep your answer from part 1 (where you want the robot to go)
   and then set the velocity to get there. What makes this part harder is that it might take
   a while to get there now :)
+  
+  Target: 90/100
   */
   public PVector behave(PVector robot_pos, PVector robot_vel, PVector ball_pos, PVector ball_vel) {
+    // silly solution
     PVector target = ball_pos;
     
     p = PVector.sub(target,robot_pos);

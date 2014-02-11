@@ -12,7 +12,7 @@ Robot r;
 int W = 600;
 int H = 600;
 
-float max_speed = 1;
+float max_speed = 2;
 float max_dist = 10;
 
 int score;
@@ -44,7 +44,7 @@ void draw() {
     reset_target(target);
     score++;
     int ave_time = time / score;
-    print("Average time: " + ave_time + "\n");
+    print("Average time: " + ave_time + " runs: " + score + "\n");
   }
   
   time++;

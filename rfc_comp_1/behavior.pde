@@ -1,3 +1,9 @@
+/*
+  Instructions:
+  Write fill in the "behave()" function below to tell the goalie where to go to block the ball!
+  Note: the +Y direction is down, so (0,0) is the top left corner of the screen.
+*/
+
 int testing_mode = 1; //0 for scoring, 1 for slow scoring, 2 for manual ball control
 
 class Behavior {
