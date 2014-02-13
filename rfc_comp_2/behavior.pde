@@ -1,4 +1,4 @@
-int testing_mode = 0; //0 for scoring, 1 for slow scoring, 2 for manual ball control
+int testing_mode = 1; //0 for scoring, 1 for slow scoring, 2 for manual ball control
 
 class Behavior {
   
