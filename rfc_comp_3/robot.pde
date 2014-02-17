@@ -15,7 +15,7 @@ class Robot {
   }
   
   public void update(PVector t) {
-    PVector accel = b.behave(this.position, this.velocity, t);
+    PVector accel = b.behave(this.position.get(), this.velocity.get(), t);
     accel.limit(max_accel);
     this.velocity.add(accel);
     this.position.add(this.velocity);
