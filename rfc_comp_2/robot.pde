@@ -15,7 +15,8 @@ class Robot {
   }
   
   public void update(Ball ball) {
-    this.velocity = b.behave(this.position.get(), this.velocity.get(), ball.position.get(), ball.velocity.get());
+    PVector target = b.behave(this.position.get(), this.velocity.get(), ball.position.get(), ball.velocity.get());
+    this.velocity = PVector.sub(target,this.position);
     this.velocity.limit(max_mag);
     this.position.add(this.velocity);
     ellipse(position.x,position.y,2*r,2*r);

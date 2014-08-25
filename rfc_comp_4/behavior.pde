@@ -9,6 +9,8 @@ class Behavior {
   int goal_y; // y position of the start of the top of the goal. this is also the baseline of the field
   int goal_xl; // x position of the left side of the goal
   int goal_xr; // x position of the right side of the goal
+  int goal_center_x; // x position of center of goal
+  int goal_center_y; //
   */
   
   // declare any variables you need between steps here
@@ -32,9 +34,9 @@ class Behavior {
   
   Target: 90/100
   */
-  public PVector behave(PVector robot_pos, PVector robot_vel, PVector ball_pos, PVector ball_vel) {
+  public PVector behave(PVector robot_pos, ArrayList<Robot> robots) {
     // silly solution
-    PVector target = ball_pos;
+    PVector target = new PVector(goal_xl + goal_width/2, goal_y);
     
     example = example + 1;
     
