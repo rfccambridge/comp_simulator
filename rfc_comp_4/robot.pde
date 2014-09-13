@@ -6,7 +6,7 @@ class Robot {
   private int m = 100;
   
   Robot() {
-    position = new PVector(random(width/4, width*3/4), random(height/2, height - 2*goal_height));
+    position = new PVector(random(width/3, width*2/3), random(height*3/4, height - 2*goal_height));
     velocity = new PVector(0,0);
   }
   
@@ -14,5 +14,10 @@ class Robot {
     this.velocity = PVector.mult(this.velocity, .9);
     this.position.add(this.velocity);
     ellipse(position.x,position.y,2*r,2*r);
+  }
+  
+  public void move(PVector pos)
+  {
+    this.position = pos;
   }
 }

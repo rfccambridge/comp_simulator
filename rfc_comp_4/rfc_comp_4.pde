@@ -18,7 +18,7 @@ int goal_y = H - goal_height;
 int goal_xl = W / 2 - goal_width /2;
 int goal_xr = W / 2 + goal_width /2;
 
-int frame_limit = 200;
+int frame_limit = 100;
 
 int score;
 int trials;
@@ -106,7 +106,9 @@ ArrayList<Robot> do_reset(Ball b, ArrayList<Robot> rs)
   {
     rs.add(new Robot());
   }
-  print("robots now " + rs.size());
+  
+  // place the goalie robot
+  rs.get(0).move(new PVector(width/2, goal_y));
   
   // now reset the ball with this info
   b.reset(rs);
