@@ -1,9 +1,9 @@
 /**
  * RFC Comp
- * Goalie simulator
+ * Shooting simulator
  * by Erik Schluntz
  * 
- * Write a behavior for the goalie to block the ball!
+ * Write a behavior to shoot the ball past the defenders
  */
  
 Ball b;

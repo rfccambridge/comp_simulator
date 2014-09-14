@@ -23,14 +23,11 @@ class Behavior {
   }
   
   /* 
-  This time the problem is a bit harder!
-  Return the desired velocity of the robot. (capped at a magnitude of 5)
+  You'll want to aim for somewhere on the goal, but make sure there are no defenders between the target
+  and the location of the ball!
   
-  Make sure you don't go off the edge of the screen, because that will count as a loss.
-  
-  Hint: You might want to keep your answer from part 1 (where you want the robot to go)
-  and then set the velocity to get there. What makes this part harder is that it might take
-  a while to get there now :)
+  Robot radius: 20
+  Ball radius: 5
   
   Target: 90/100
   */

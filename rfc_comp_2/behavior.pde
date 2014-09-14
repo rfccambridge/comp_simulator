@@ -22,13 +22,11 @@ class Behavior {
   
   /* 
   This time the problem is a bit harder!
-  Return the desired velocity of the robot. (capped at a magnitude of 5)
+  return the position, but now the robot has a limited speed.
   
   Make sure you don't go off the edge of the screen, because that will count as a loss.
   
-  Hint: You might want to keep your answer from part 1 (where you want the robot to go)
-  and then set the velocity to get there. What makes this part harder is that it might take
-  a while to get there now :)
+  Hint: You might want to keep your answer from part 1 and add some heuristics to stay in a better position between shots
   
   Target: 90/100
   */
