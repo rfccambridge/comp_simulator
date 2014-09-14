@@ -1,4 +1,4 @@
-int testing_mode = 0; //0 for fast, 1 for slow scoring, 2 for manual ball control
+int testing_mode = 1; //0 for fast, 1 for slow scoring, 2 for manual ball control
 
 class Behavior {
   
@@ -34,9 +34,12 @@ class Behavior {
   
   Target: 90/100
   */
-  public PVector behave(PVector robot_pos, ArrayList<Robot> robots) {
+  public PVector behave(PVector shot_pos, ArrayList<Robot> robots) {
     // silly solution
     PVector target = new PVector(goal_xl + goal_width/2, goal_y);
+    
+    //the location of the first defender:
+    PVector defender1 = robots.get(1).get_pos();
     
     example = example + 1;
     

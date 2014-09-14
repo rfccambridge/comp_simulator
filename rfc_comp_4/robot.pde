@@ -20,4 +20,9 @@ class Robot {
   {
     this.position = pos;
   }
+  
+  public PVector get_pos()
+  {
+    return this.position;
+  }
 }
